@@ -92,24 +92,25 @@
                         <div class="text-center">
                             <input type="submit" class="btn btn-primary">
                         </div>
-                        <input type="hidden" name="p0a.text" v-model="p0a.text">
-                        <input type="hidden" name="p0b.text" v-model="p0b.text">
-                        <input type="hidden" name="p1a.text" v-model="p1a.text">
-                        <input type="hidden" name="p1b.text" v-model="p1b.text">
-                        <input type="hidden" name="p1c.text" v-model="p1c.text">
-                        <input type="hidden" name="p1d.text" v-model="p1d.text">
-                        <input type="hidden" name="p2a.text" v-model="p2a.text">
-                        <input type="hidden" name="p2b.text" v-model="p2b.text">
-                        <input type="hidden" name="p2c.text" v-model="p2c.text">
-                        <input type="hidden" name="p2d.text" v-model="p2d.text">
-                        <input type="hidden" name="p3a.text" v-model="p3a.text">
-                        <input type="hidden" name="p3b.text" v-model="p3b.text">
-                        <input type="hidden" name="p3c.text" v-model="p3c.text">
-                        <input type="hidden" name="p3d.text" v-model="p3d.text">
-                        <input type="hidden" name="p4a.text" v-model="p4a.text">
-                        <input type="hidden" name="p4b.text" v-model="p4b.text">
-                        <input type="hidden" name="p4c.text" v-model="p4c.text">
-                        <input type="hidden" name="p4d.text" v-model="p4d.text">
+                        <input type="hidden" name="seats[p0a]" v-model="p0a.text">
+                        <input type="hidden" name="seats[p0b]" v-model="p0b.text">
+                        <input type="hidden" name="seats[p1a]" v-model="p1a.text">
+                        <input type="hidden" name="seats[p1b]" v-model="p1b.text">
+                        <input type="hidden" name="seats[p1c]" v-model="p1c.text">
+                        <input type="hidden" name="seats[p1d]" v-model="p1d.text">
+                        <input type="hidden" name="seats[p2a]" v-model="p2a.text">
+                        <input type="hidden" name="seats[p2b]" v-model="p2b.text">
+                        <input type="hidden" name="seats[p2c]" v-model="p2c.text">
+                        <input type="hidden" name="seats[p2d]" v-model="p2d.text">
+                        <input type="hidden" name="seats[p3a]" v-model="p3a.text">
+                        <input type="hidden" name="seats[p3b]" v-model="p3b.text">
+                        <input type="hidden" name="seats[p3c]" v-model="p3c.text">
+                        <input type="hidden" name="seats[p3d]" v-model="p3d.text">
+                        <input type="hidden" name="seats[p4a]" v-model="p4a.text">
+                        <input type="hidden" name="seats[p4b]" v-model="p4b.text">
+                        <input type="hidden" name="seats[p4c]" v-model="p4c.text">
+                        <input type="hidden" name="seats[p4d]" v-model="p4d.text">
+                        <input type="hidden" name="location_id" value="1">
                         {{Form::close()}}
                     </div>
                 </div>
