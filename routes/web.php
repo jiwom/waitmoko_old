@@ -11,11 +11,13 @@
 |
 */
 
-Route::post('/home', 'HomeController@store')->name('test');
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => ['web','auth']], function(){
+	Route::post('/home', 'HomeController@store')->name('test');
+	Route::get('/home', 'HomeController@index')->name('home');
+});
