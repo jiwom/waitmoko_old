@@ -8,14 +8,6 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
-    /**
-     * HomeController constructor.
-     *
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
 
     /**
      * Show the application dashboard.
@@ -25,6 +17,7 @@ class HomeController extends Controller
     public function index()
     {
         $seats = Seat::where('location_id', 1)->first()->arrangement;
+
         return view('home', compact('seats'));
     }
 
